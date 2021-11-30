@@ -6,14 +6,27 @@
     android:layout_height="match_parent"
     tools:context=".MainActivity">
 
+    <EditText
+        android:id="@+id/txtTelefono"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="145dp"
+        android:layout_marginTop="440dp"
+        android:ems="10"
+        android:inputType="textPhonetic"
+        android:text="Escriba un teléfono"
+        android:textColor="#0F45BC" />
+
     <TextView
         android:id="@+id/lblNombre3"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignParentStart="true"
         android:layout_alignParentTop="true"
-        android:layout_marginStart="33dp"
-        android:layout_marginTop="229dp"
+        android:layout_marginStart="31dp"
+        android:layout_marginTop="238dp"
         android:text="Fecha Nac."
         android:textSize="20sp"
         android:textStyle="bold" />
@@ -24,8 +37,8 @@
         android:layout_height="wrap_content"
         android:layout_alignParentStart="true"
         android:layout_alignParentTop="true"
-        android:layout_marginStart="33dp"
-        android:layout_marginTop="319dp"
+        android:layout_marginStart="38dp"
+        android:layout_marginTop="451dp"
         android:text="Teléfono"
         android:textSize="20sp"
         android:textStyle="bold" />
@@ -62,9 +75,65 @@
         android:layout_height="wrap_content"
         android:layout_alignParentStart="true"
         android:layout_alignParentTop="true"
-        android:layout_marginStart="33dp"
-        android:layout_marginTop="107dp"
+        android:layout_marginStart="34dp"
+        android:layout_marginTop="84dp"
         android:text="Nombre"
         android:textSize="20sp"
         android:textStyle="bold" />
+
+    <EditText
+        android:id="@+id/txtNombre"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="145dp"
+        android:layout_marginTop="73dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text="Escriba un nombre..."
+        android:textColor="#0F45BC" />
+
+    <RadioGroup
+        android:layout_width="202dp"
+        android:layout_height="110dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="145dp"
+        android:layout_marginTop="126dp">
+
+        <RadioButton
+            android:id="@+id/rdMasculino"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:text="Masculino" />
+
+        <RadioButton
+            android:id="@+id/rdFemenino"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:minHeight="48dp"
+            android:text="Femenino" />
+    </RadioGroup>
+
+    <CalendarView
+        android:id="@+id/cvFecha"
+        android:layout_width="209dp"
+        android:layout_height="201dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="145dp"
+        android:layout_marginTop="222dp" />
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="153dp"
+        android:layout_marginBottom="44dp"
+        android:text="Button" />
 </RelativeLayout>
